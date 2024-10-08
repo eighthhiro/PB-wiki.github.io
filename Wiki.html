@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>PerpBlog | Discussions</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+            z-index: 1000;
+            transition: 0.6s;
+            background-color: #7e1617;
+        }
+        header .logo
+        {
+            width: 50px;
+            height: 50px;
+            padding-left: 15px;
+            position: relative;
+            font-weight: 700;
+            transition: 0.6s;
+        }
+        header p{
+            position: absolute;
+            left: 70px;
+        }
+        header ul
+        {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header ul li
+        {
+            position: relative;
+            list-style: none;
+        }
+        header ul li a
+        {
+            position: relative;
+            margin: 0 20px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            color: #f1c40f;
+        }
+        .comment {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #3498db;
+        }
+        p {
+            line-height: 1.7;
+            margin: 10px;
+        }
+        .container button {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #7e1617;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .container button:hover {
+            background-color: #5f0e0f;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="#hero"><img src="./favicon.png" class="logo" alt="Logo"></a>
+        <p>PerpsBlog</p>
+         <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#tl">Discussions</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Discussions about Data Privacy and Cybersecurity</h1>
+        <div class="comment">
+            <i class="fas fa-user-shield icon"></i>
+            <p><strong>Comment 1:</strong> "Data privacy is more important than ever. In today's digital age, protecting personal information is crucial to maintaining trust and security. Organizations must prioritize data privacy measures to safeguard individuals' rights."<br> - Anonymous Perpetualite Student</p>
+        </div>
+        <div class="comment">
+            <i class="fas fa-lock icon"></i>
+            <p><strong>Comment 2:</strong> "Cybersecurity threats are constantly evolving. It's essential for businesses to stay updated with the latest security protocols and invest in robust cybersecurity infrastructure to protect against potential breaches."<br> - Hebrew T. Miranda</p>
+        </div>
+        <div class="comment">
+            <i class="fas fa-shield-alt icon"></i>
+            <p><strong>Comment 3:</strong> "Educating people about data privacy and cybersecurity is key. Awareness and knowledge empower individuals to take control of their digital lives and protect themselves from cyber threats."<br> - Rizza M. Stamaria</p>
+        </div>
+        <button type="submit">Add Comment</button>
+    </div>
+</body>
+</html>
